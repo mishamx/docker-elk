@@ -1,0 +1,2 @@
+LOCALDATETIME %{DATE:date} %{TIME:time}
+MYSQLLOG %{LOCALDATETIME:date_time} %{NUMBER} \[%{LOGLEVEL:loglevel}\] %{GREEDYDATA:message}

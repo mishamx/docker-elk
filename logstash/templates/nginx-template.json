@@ -1,0 +1,16 @@
+{
+  "template" : "nginx-*",
+  "version" : 50001,
+  "settings" : {
+    "index.refresh_interval" : "5s"
+  },
+  "mappings": {
+    "nginx-access": {
+      "properties": {
+        "geoip.location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}
